@@ -117,6 +117,109 @@ ul {
     display: none;
 }
 
+/* properties for section 3*/
+.s3_wrapper {
+    background: aqua;
+}
+
+.s3,
+.s3_left-side {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.s3 {
+    padding: 56px 0;
+}
+
+.s3_title,
+.s3_desc {
+    display: block;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+.s3_title {
+    text-transform: uppercase
+}
+
+.s3_desc {
+    margin-top: 26px;
+    padding: 0 20px;
+}
+
+.s3_icons {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 160px;
+    margin: 22px 0;
+}
+
+.s3_icons a {
+    width: 70px;
+    height: 70px;
+    border: 1px solid blue;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+}
+
+.s3_img {
+    position: absolute;
+    top: 26%;
+    left: 26%;
+}
+
+iframe {
+    border-radius: 2%;
+}
+
+/* properties for section 4 */
+.s4 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.s4_title {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: aquamarine;
+    position: relative;
+    font-size: 18px;
+}
+
+
+.s4_title::before,
+.s4_title::after {
+    content: "";
+    height: 1px;
+    width: 60px;
+    border: 1px solid aquamarine;
+    background-color: aquamarine;
+    position: absolute;
+    top: 45%;
+}
+
+.s4_title::before {
+    left: -66%;
+}
+
+.s4_title::after {
+    right: -66%;
+}
+
+.s4_desc {
+    display: block;
+    text-align: center;
+    margin-top: 38px;   
+}
 /* tablet */
 @media (min-width:768px) {
     /* common properties */
@@ -167,6 +270,23 @@ ul {
     .s2_item p {
         margin-bottom: 116px;
     }
+
+    /* properties for section 3 */
+    .s3 {
+        padding: 106px 0;
+    }
+    
+    .s3_desc {
+        padding: 0 82px;
+    }
+
+    iframe {
+        width: 500px;
+        height: 306px;
+        margin-top: 32px;
+    }
+
+
 }
 
 /* desktop */
@@ -217,5 +337,22 @@ ul {
         height: 680px; */
         order: 4;
     }
+
+    /* properties for section 3 */
+    .s3 {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .s3_left-side {
+        width: 540px;
+        align-items: flex-start;
+        padding-left: 28px;
+    }
+    .s3_desc {
+        padding: 0;
+        text-align: left;
+    }
+
 }
 
