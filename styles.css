@@ -183,6 +183,7 @@ iframe {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    width: inherit;
     padding: 60px 0;
 }
 
@@ -220,6 +221,81 @@ iframe {
     text-align: center;
     margin-top: 38px;   
 }
+
+.s4_list {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.s4_item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.s4_image-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 270px;
+    height: 300px;
+    background-color: rgba(21, 224, 112, 0.548);
+    opacity: 0;
+}
+
+.s4_image-icons {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 136px;
+}
+
+.s4_image-icons a {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(38, 41, 40, 0.445);
+    position: relative;
+}
+
+.s4_image-icons a img {
+    position: absolute;
+    bottom: 23%;
+    right: 21%;
+}
+
+.s4_image-wrapper p {
+    font-size: 16px;
+    color: white;
+    padding: 0 26px;
+}
+
+.s4_item:hover .s4_image-wrapper {
+    opacity: 1;
+}
+
+.s4_image-desc {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.s4_image-desc h3 {
+    color: rgb(21, 224, 112);
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.s4_image-desc p {
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
 /* tablet */
 @media (min-width:768px) {
     /* common properties */
@@ -286,6 +362,16 @@ iframe {
         margin-top: 32px;
     }
 
+    /* properties for section 4 */
+    .s4_desc {
+        padding: 0 80px;
+    }
+    
+    .s4_list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
 
 }
 
@@ -352,6 +438,19 @@ iframe {
     .s3_desc {
         padding: 0;
         text-align: left;
+    }
+
+    /* properties for section 4 */
+    /* .s4 {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    } */
+    .s4_list {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        width: inherit;
     }
 
 }
