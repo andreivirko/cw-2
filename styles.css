@@ -541,6 +541,28 @@ iframe {
     margin-bottom: 10px;
     color: rgba(202, 143, 202, 0.767);
 }
+
+/* properties for footer */
+.footer_wrapper {
+    background: black;
+}
+
+hr {
+    margin: 0;
+    border: solid grey 0.5px;
+}
+
+.footer {
+    color: grey;
+    padding: 30px 0;
+}
+
+.footer_span {
+    display: flex;
+    flex-flow: column;
+}
+
+
 /* tablet */
 @media (min-width:768px) {
     /* common properties */
@@ -691,6 +713,12 @@ iframe {
         font-size: 20px;
     }
     
+    /* properties for footer */
+    .footer {
+        display: flex;
+        flex-flow: row;
+    }
+
 }
 
 /* desktop */
